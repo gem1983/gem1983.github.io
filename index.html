@@ -2,73 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-     <style>
-	#d1 {
+     <style> 
+#d1 {
+    display: flex;
+    border: 2px solid black;
+    height: 100px;
+    background-color: olivedrab;
+    justify-content: space-between;
+    }
+#d2 {
 	border: 2px solid black;
-	background-color: green;
-	width: 1000px;
-	height: 100px;	
-	text-align: center;
-	}
-	#im1 {
-	float: right;
-	}
-	#d2 {
-	border: 2px solid black;
+	display: flex;
 	background-color: lawngreen;
-	width: 1000px;
 	height: 80px;
-    }	
-	#d2 li {
-	display: inline-block;
-	margin-left: 115px;
-	text-align: center;
+	}
+ul, li {
+	display: flex;
+	margin-left: 100px;
+	font-size: 25px;
 	}
 	#d3 {
-	border: 2px solid black;
-	background-color: lawngreen;
-	width: 650px;
+	display: flex;
 	height: 550px;
-    text-align: center;	
+    background-color: olivedrab;
+    border: 2px solid black;
 	}
-	#d4 {
+	#d3a {
 	border: 2px solid black;
-	background-color: lawngreen;
-	width: 346px;
 	height: 550px;
-	text-align: center;
-	position: absolute;
+	flex: 2;
 	}
-	table {
-	margin: auto;
-	background-color: white;
-	border: 1px solid black;
-	}
-	tr:nth-child(6) {
-	background-color: gray;
-	}
-	tr:nth-child(7) {
-	background-color: gray;
-	}
-	table tr td {
-	width: 30px;
-	border: 1px solid black;
-	}
-	#d34 div {
-	display: inline-block;
-	}
-	#d5 {
+	#d3b {
 	border: 2px solid black;
-	background-color: lawngreen;
-	width: 1000px;
-	height: 100px;
+	height: 550px;
+	flex: 1.2;
 	text-align: center;
 	}
-	 </style>
+    #d4 {
+    border: 2px solid black;
+	height: 80px;
+    background-color: olivedrab;
+	text-align: center;
+	
+	}	
+	@media (max-width: 500px) 
+	{ul { flex-direction: column; justify-content: center;
+	} #d2 {height: 250px;} #d3 {flex-direction: column; height: 750px;}
+	li { align-self: center;}
+	}
+	
+	</style>
   </head>
   <body>
-  <div id="d1"> 
-  <h1>Мир птиц<img id="im1" src="pt.jpg"></h1>
+  <div id="d1">
+  <div></div>
+  <h1>Богдан Хмельницкий</h1>
+  <img src="sab.png">
   </div>
   <div id="d2">
   <ul>
@@ -79,86 +68,29 @@
   <li><a href="index4.html">Архив</a></li>
   </ul>
   </div>
-  <div id="d34">
-  <div id="d3"> 
-  <h2>Добро пожаловать</h2>
-  <p>Сегодняшняя статья про птиц будет немного не такой, как все остальные. Обычно на сайте про животных Зверей.Ру мы рассказываем о птицах, приводим их описание, фотографии, публикуем интересные факты из их жизни. Однако данная статья про говорящего попугая несколько не о научных фактах, но все же стоит того, чтобы вы о ней узнали.</p>
+  <div id="d3">
+  <div id="d3a"> 
+  <p>Хмельницький неодноразово брав участь у козацьких посольствах до короля та сейму з метою відстоювання прав українського на­роду. Король Владислав IV одного разу відправив Хмельницького до Франції для переговорів щодо використання козаків у війні з Іспанією. У наслідку досягнутої домовленності у 1646 році 2400 козаків виїха­ли до Франції, де відзначилися при взятті Дюнкерка.
+
+ 
+
+У цей же час після приборкання козацько-селянсь­ких повстань посилився тиск на український народ. Свавілля польської шляхти відчув на собі й Богдан. Він втік у грудні 1647 року на Січ і там оголосив план підготовки національно-визвольної війни, що був одностайно підтриманий запорожцями. На Січі почали зосереджуватися великі маси пригнічених селян зі всієї України, а Богдан поїхав до кримсь­кого хана з метою залучити його до своєї справи.
+
+</p>
+  </div>
+  <div id="d3b">
+<h2>Фотогалерея</h2>  
+  <img src="b1.jpg">
+  <img src="b2.jpg">
+  <img src="b3.jpg">
+  <img src="b4.jpg">
+  <img src="b5.jpg">
+  </div>
   </div>
   <div id="d4">
-  <h2>Любимые фото</h2>
-  <img id="im2" src="p1.jpg">
-  <img id="im3" src="p2.jpg">
-  <img id="im4" src="p3.jpg">
-  <img id="im5" src="p4.jpg">
-  <table>
-  <tr>
-  <td>Пн</td>
-  <td>25</td>
-  <td>4</td>
-  <td>11</td>
-  <td>18</td>
-  <td>25</td>
-  <td>1</td>
-  </tr>
-  <tr>
-  <td>Вт</td>
-  <td>26</td>
-  <td>5</td>
-  <td>12</td>
-  <td>19</td>
-  <td>26</td>
-  <td>2</td>
-  </tr>
-  <tr>
-  <td>Ср</td>
-  <td>27</td>
-  <td>6</td>
-  <td>13</td>
-  <td>20</td>
-  <td>27</td>
-  <td>3</td>
-  </tr>
-  <tr>
-  <td>Чт</td>
-  <td>28</td>
-  <td>7</td>
-  <td>14</td>
-  <td>21</td>
-  <td>28</td>
-  <td>4</td>
-  </tr>
-  <tr>
-  <td>Пт</td>
-  <td>1</td>
-  <td>8</td>
-  <td>15</td>
-  <td>22</td>
-  <td>29</td>
-  <td>5</td>
-  </tr>
-  <tr>
-  <td>Сб</td>
-  <td>2</td>
-  <td>9</td>
-  <td>16</td>
-  <td>23</td>
-  <td>30</td>
-  <td>6</td>
-  </tr>
-  <tr>
-  <td>Вс</td>
-  <td>3</td>
-  <td>10</td>
-  <td>11</td>
-  <td>24</td>
-  <td>31</td>
-  <td>7</td>
-  </tr>
-  </table>
+  <p>Flex Flex Flex Flex Flex Flex Flex Flex Flex Flex Flex Flex </p>
   </div>
-  </div>
-   <div id="d5"> 
-   <p>Этот сайт сделан на заказ. По вопросам сотрудничества обращаться по телефону 0930000001</p>
-   </div>
+  
+ 
   </body>
 </html>
