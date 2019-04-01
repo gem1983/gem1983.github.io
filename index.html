@@ -1,30 +1,105 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Course converter</title>
-	<script src="converter.js" type="text/javascript"></script>
+	
+	<title>Login on my site</title>
+<meta charset="utf-8">
+<style>
+#d21 {
+display: flex;
+}
+#d2 {
+width: 400px;
+height: 450px;
+background: yellow;
+text-align: center;
+margin: 30px;
+}
+#im1 {
+width: 150px;
+height: 350px;
+float: left;
+margin: 10px;
+}
+#d3 {
+width: 400px;
+height: 450px;
+background: pink;
+text-align: center;
+margin: 30px;
+}
+#im2 {
+width: 150px;
+height: 350px;
+float: left;
+margin: 10px;
+}
+#d4 {
+width: 400px;
+height: 450px;
+background: lime;
+text-align: center;
+margin: 30px;
+}
+#im3 {
+width: 150px;
+height: 350px;
+float: left;
+margin: 10px;
+}
+</style>
 </head>
-<body onload="load()">
-	<div class="content">
-		<div class="exchange">
-			<div>
-				<label for="amount">Enter</label>
-				<input type="text" id="amount" />
-				<span style="font-weight:bold;">UAH</span>
-			</div>			
-			<div>
-				<label for="currencyCode">Convert To:</label>
-				<select id="currencyCode">
-					<option value="USD">USD</option>
-					<option value="EUR">EUR</option>
-				</select>
-			</div>
-			<div>
-				<label for="convertedAmount">Result</label>
-				<input type="text" id="convertedAmount" readonly />
-			</div>
-			<button onclick="get()">Calculate</button>
-		</div>
+<body>
+	<form action="#">
+		<label>Login</label>
+		<input id="input1" type="text" name="login">
+
+		<label>Password</label>
+		<input id="input2" type="password" name="password">
+
+		<button onclick='adm()'>Log in</button>
+		<button id="btn00" style="display: none;">Log out</button>
+	</form>
+	<div id="d11" style="display: none">
+		<label for="currencyCode">Convert To:</label>
+		   <select id="currencyCode">
+			<option value="USD">USD</option>
+			<option value="UAN">UAN</option>
+		  </select>
 	</div>
+	<button id="btn0" onclick="adm1()" style="display: none">Показать цены в выбраной валюте</button>
+	<div id="d1" style="display: none">
+	Привет Admin, рады видеть тебя!!!!!
+	</div>
+	<div id="d21">
+	<div id="d2">
+	<h2>Samsung A750</h2>
+	<img id="im1" src="a750.jpg">
+	<p> Экран (6", Super AMOLED, 2220x1080)/ Samsung Exynos 7885 (2.2 ГГц + 1.6 ГГц)/ основная тройная камера: 24 Мп + 8 Мп + 5 Мп, фронтальная камера: 24 Мп/ RAM 4 ГБ/ 64 ГБ встроенной памяти + microSD (до 512 ГБ)/ 3G/ LTE/ GPS/ ГЛОНАСС/ поддержка 2х SIM-карт (Nano-SIM)/ Android 8.0 (Oreo)/ 3300 мА*ч
+</p>
+<h3 id="h3a">6599 UAN</h3>
+<button id="btn1" style="display: none">Купить</button>
+	</div>
+	<div id="d3">
+	<h2>Samsung M20</h2>
+	<img id="im2" src="m20.jpg">
+	<p> Экран (6.3", PLS, 2340х1080)/ Samsung Exynos 7904 (2 x 1.8 ГГц + 6 x 1.6 ГГц)/ двойная основная камера: 13 Мп + 5 Мп, фронтальная 8 Мп/ RAM 4 ГБ/ 64 ГБ встроенной памяти + microSD (до 512 ГБ)/ 3G/ LTE/ GPS/ ГЛОНАСС/ BDS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 8.1 (SE 9.5) / 5000 мА*ч
+</p>
+	<h3 id="h3b">7599 UAN</h3>
+<button id="btn2" style="display: none">Купить</button>
+	</div>
+	<div id="d4">
+	<h2>Samsung A350</h2>
+	<img id="im3" src="a350.jpg">
+	<p> Экран (6.4", Super AMOLED, 2340x1080)/ Samsung Exynos 7904 (2x1.8 ГГц + 6x1.6 ГГц)/ двойная основная камера: 16 Мп + 5 Мп, фронтальная камера: 16 Мп/ RAM 3 ГБ/ 32 ГБ встроенной памяти + microSD (до 512 ГБ)/ 3G/ LTE/ GPS/ ГЛОНАСС/ поддержка 2х SIM-карт (Nano-SIM)/ Android 9.0 (Pie)/ 4000 мА*ч
+</p>
+	<h3 id="h3c">5599 UAN</h3>
+<button id="btn3" style="display: none">Купить</button></div>
+	
+	</div>
+	</div>
+	<script type="text/javascript" src="check.js"></script>
+
+
 </body>
 </html>
